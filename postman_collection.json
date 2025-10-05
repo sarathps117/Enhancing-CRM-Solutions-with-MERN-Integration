@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "MERN CRM Sample",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \"name\":\"Admin\",\\n  \"email\":\"admin@demo.com\",\\n  \"password\":\"password\"\\n}"
+        },
+        "url": "http://localhost:5000/api/auth/register"
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \"email\":\"admin@demo.com\",\\n  \"password\":\"password\"\\n}"
+        },
+        "url": "http://localhost:5000/api/auth/login"
+      }
+    },
+    {
+      "name": "Get Customers",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:5000/api/customers"
+      }
+    }
+  ]
+}
